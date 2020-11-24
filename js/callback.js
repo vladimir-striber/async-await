@@ -14,11 +14,19 @@ const posts = [
 function getPosts() {
   setTimeout(() => {
     let output = "";
+    // let main = document.querySelector(".main");
     posts.forEach((post) => {
       output += `<li>${post.title}</li>`
-    })
+      // let mainLi = document.createElement("li");
+      // mainLi.innerHTML = post.title;
+      // main.appendChild(mainLi);
+    });
 
-    document.body.innerHTML = output;
+    let mainUl = document.querySelector(".mainUl");
+
+    mainUl.innerHTML = output;
+
+    // document.body.innerHTML = output;
   }, 1000)
 }
 
