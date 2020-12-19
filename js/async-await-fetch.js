@@ -1,6 +1,7 @@
 function displayUsers(users) {
   let output = "";
   users.forEach((user) => {
+    debugger
 
     output += `<p><span style="margin-right: 12px">${user.id}</span>${user.name}</p>`;
 
